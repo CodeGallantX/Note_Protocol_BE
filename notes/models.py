@@ -8,6 +8,7 @@ class User(AbstractUser):
 class Notes(models.Model):
     sender = models.ForeignKey(User, on_delete=models.CASCADE, related_name='sent_notes')
     receiver = models.ForeignKey(User, on_delete=models.CASCADE, related_name='received_notes')
+    title = models.CharField(max_length=20)
     messages = models.TextField()
     timestamp = models.DateTimeField(auto_now_add=True)
     
