@@ -14,7 +14,7 @@ SECRET_KEY = config("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['http://localhost:3000', "https://note-sharing-protocol.vercel.app", "silent-note-protocol-be.onrender.com"]
+ALLOWED_HOSTS = ['http://localhost:3000' "http://localhost:5173", "https://note-sharing-protocol.vercel.app", "silent-note-protocol-be.onrender.com"]
 
 
 # Application definition
